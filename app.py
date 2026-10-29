@@ -1,7 +1,6 @@
 from chatbot import chatbot_response
 from flask import Flask, render_template, request
 from detector import analyze_message
-from chatbot import chatbot_response
 
 app = Flask(__name__)
 
