@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+<div class="result-container">
+
+
+<h2>{{ result.status }}</h2>
+
+
+<div class="risk-card">
+
+<div class="circle">
+
+{{ result.score }}
+
+<span>/100</span>
+
+</div>
+
+
+<div class="risk-label">
+
+{{ result.status }}
+
+</div>
+
+
+</div>
+
+
+<h3>ANALYSIS</h3>
+
+<p>{{ result.explanation }}</p>
+
+
+<a href="/" class="back-btn">
+Check Another Message
+</a>
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>FraudGuard</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+FraudGuard <span>Financial Safety Platform</span>
+</div>
+
+<nav>
+
+<a href="#">Analyzer</a>
+<a href="#">Learn</a>
+
+<button class="report-btn"
+onclick="window.open('https://cybercrime.gov.in','_blank')">
+⚠ Report Fraud
+</button>
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div class="badge">
+🛡 AI-Powered Financial Fraud Detection
+</div>
+
+<h1>
+Is That Message <br>
+<span>Safe or a Scam?</span>
+</h1>
+
+<p>
+Paste any suspicious SMS, email, WhatsApp message, or link.
+Our AI instantly scores it for fraud risk and explains exactly why it may be dangerous.
+</p>
+
+
+<!-- FEATURE CARDS -->
+
+<div class="features">
+
+<div>⚡ Instant <br><small>AI Analysis</small></div>
+
+<div>🛡 10+ <br><small>Fraud Categories</small></div>
+
+<div>🔒 100% <br><small>Private & Secure</small></div>
+
+<div>👥 Free <br><small>For Everyone</small></div>
+
+</div>
+
+</section>
+
+
+
+<!-- MAIN SPLIT LAYOUT -->
+
+<div class="main-layout">
+
+
+<!-- LEFT SIDE ANALYZER -->
+
+<div class="analyzer-panel">
+
+<h2>Paste Suspicious Message or Link</h2>
+
+<form method="POST">
+
+<textarea name="message"
+placeholder="Paste suspicious SMS, email, WhatsApp message or URL"></textarea>
+
+<br>
+
+<button type="submit">Analyze Now</button>
+
+</form>
+
+</div>
+
+
+
+<!-- RIGHT SIDE CHATGPT STYLE CHATBOT -->
+
+<div class="chat-panel">
+
+<div class="chat-header">
+Financial Safety Assistant
+</div>
+
+
+<div id="chat-window" class="chat-window"></div>
+
+
+<div class="chat-input-area">
+
+<input id="chat-input"
+placeholder="Ask about frauds, OTP scams, loans, investments">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
